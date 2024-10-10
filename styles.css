@@ -47,18 +47,23 @@ p, h1, h2, h3, h4, h5 {
     z-index: 1;
     padding-left: 40px;
     padding-top: 10px;
+    padding-right: 40px;
 
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+
+    display: grid;
+    grid-template-columns: clamp(300px, 70%, 800px) 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .search-container {
     display: grid;
     grid-auto-flow: column;
-    width: clamp(300px, 70%, 800px);
     padding: 10px;
     gap: 15px;
     grid-template-columns: 25px 1fr;
     align-items: center;
+    border: 1px solid blue;
 }
 
 input[type="search"] {
@@ -69,7 +74,18 @@ input[type="search"] {
     background-color: #cbd5e1;
 }
 
+.profile-container {
+    display: grid;
+    justify-items: end;
+    align-items: center;
+    grid-auto-flow: column;
+    border: 1px solid black;
+}
 
+.profile-name {
+    font-size: 18px;
+    font-weight: bold;
+}
 
 .sidebar {
     background-color: #047857;
