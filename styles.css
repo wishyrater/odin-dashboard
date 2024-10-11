@@ -218,7 +218,9 @@ input[type="search"] {
     background-color: white;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
-    height: 200px;
+    border-left: 8px solid #047857;
+
+    line-height: 1.0;
 
     padding: 30px 20px;
 
