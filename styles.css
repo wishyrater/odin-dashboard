@@ -191,18 +191,26 @@ input[type="search"] {
 
 .content {
     background-color: #cbd5e1;
+    padding: 30px 20px;
 
     display: grid;
+    gap: 20px;
     grid-template-columns: 4fr minmax(300px, 1fr);
 }
 
 .projects-container {
     grid-column: 1;
     grid-row: 1 / 3;
+
+    border: 1px solid blue;
 }
 
 .projects {
+    padding-top: 10px;
+
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
     gap: 24px;
 }
 
@@ -210,8 +218,22 @@ input[type="search"] {
     background-color: white;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
+    height: 200px;
 
     padding: 30px 20px;
 
     display: grid;
+    grid-template-rows: 1fr min-content;
+}
+
+.project-actions {
+    display: grid;
+    grid-template-columns: 1fr 25px 25px;
+    gap: 20px;
+    grid-auto-flow: column;
+    justify-self: end;
+}
+
+.announcements-container {
+    border: 1px solid red;
 }
